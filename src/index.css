@@ -12,13 +12,8 @@ body{
   background-color: #D9F9FF;
 
 }
-
-
-
-
-
 .centering{
- text-align: center;
+ /* text-align: center; */
 }
 
 input{
@@ -56,6 +51,7 @@ button{
     background-color: #00d9ff;
     background-size: 6rem;
     background-position: center center;
+    background-image: url('./image/emojifinder_logo_color.svg');
     background-repeat: no-repeat;
     color: white;
     padding: 1.5rem 2rem 2rem 2.5rem;
@@ -65,10 +61,21 @@ button{
      border: 1px solid #00b8e5;
 }
 
+button:hover{
+ font-size: 5rem;
+ background-color: #00b8e5;
+ background-size: 100px;
+}
+
   
 input::placeholder{
   color: #48d5ee;
   opacity: 0.2 ;
+  font-size: 80px;
+}
+
+input:focus{
+  border-color: #00d9ff;
 }
 
 .Search{
@@ -76,6 +83,7 @@ input::placeholder{
   vertical-align: baseline;
   justify-content: center;
   margin-top: 30px;
+
 }
 
 
@@ -87,23 +95,167 @@ input::placeholder{
     text-align: center;
     width: 50%;
     margin: 0 auto;
-    margin-top: 100px;
+    font-weight: 550;
   
   
 }
 
 .bottom{
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  padding: 0rem 2rem 2rem 2rem ;
-  
+  /* position: fixed; */
+  /* bottom: 0px;
+  left: 0px; */
+  /* padding: 0rem 2rem 2rem 2rem ; */
+  font-size: 1rem;
+  /* margin-bottom: 10px; */
+  font-weight: 600;
+  text-decoration-line: none;
 }
 
 .bottom-down{
-  position: fixed;
-  bottom: 0px;
-  left: 0px;
-  padding: 0rem 2rem 2rem 2rem ;
-  margin-top: 30px;
+  position: absolute;
+  /* padding: 0rem 2rem 2rem 2rem ; */
+  font-size: 1rem;
+  font-weight: 600;
+  }
+
+  .emojis-space{
+    display: flex;
+   justify-content: center;
+  align-items: center;
+   height: 100px;
+   font-size: 5rem;
+   margin-top: 50px;
+   animation: bringUp 1s ease forwards;
+   }
+
+
+   @keyframes bringUp {
+    from {
+      opacity: 0;
+      transform: translateY(100px);
+    }
+      to {
+        opacity: 1;
+        transform: translateY(0); 
+      }
+    }
+ .bottom-down a{
+  text-decoration: none;
  }
+
+ .bottom a{
+  text-decoration: none;
+ }
+
+ .bottom-down a:hover{
+  color: black;
+ }
+
+ .bottom a:hover{
+  color: black;
+ }
+
+ .text-space a:hover{
+  color: black;
+ }
+
+ .colors-gender{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  display: inline-block;
+
+
+ }
+
+ .aligning{
+  justify-content: space-between;
+  display:inline-block
+ }
+
+ .colors{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  
+ }
+
+ #color-0{
+  background-color: #FFCF43 ;
+ }
+
+ @media (max-width: 768px){
+  .text-space{
+    padding: 0rem 2rem 2rem 2rem;
+    text-align: center;
+    width: auto;
+    font-size: 1.5rem
+    
+  }
+
+  .Search{
+    margin: 1rem 6.5rem 0 1rem;
+    font-size: 2rem;
+    padding: 1rem;
+    height: 70px;
+    margin-bottom: 50px;
+    
+      }
+
+      input#searchs{
+        position: fixed;
+        display: block;
+        top: 0rem;
+        left: 0rem;
+        right: 0rem;
+        width: 530px;
+        height: 70px;
+        box-sizing: border-box;
+   
+      }
+
+      input::placeholder{
+        font-size: 2rem;
+        padding: 16px;
+        margin: 16px 16px 0px;
+    
+      }
+
+      button{
+        width: 80px;
+        height: 70px;
+        background-size: 40px;
+        position: absolute;
+  
+
+
+        
+      }
+
+
+      button:hover{
+        background-size: 45px ;
+      }
+
+      .Search{
+        margin: 1rem 6.5rem 0 1rem;
+        font-size: 2rem;
+        padding: 1rem;
+        height: 70px
+      }
+
+      input{
+        font-size: 2rem;
+       
+        
+      }
+
+      input:focus{
+        border-color: #00d9ff;
+      }
+      
+  }
+
+ 
