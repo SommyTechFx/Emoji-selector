@@ -17,7 +17,8 @@ const App = () => {
     }
 
     if ( searchTerm === 'love'){
-      setEmojis(["🥰", "💕", "😍","👩‍❤️", "❤️", "", "💕", "💌",  ])
+      setEmojis(["🥰", "💕", "😍","👩‍❤️", "❤️", 
+   "💌", ])
     }
 
     if ( searchTerm === 'yeah'){
@@ -64,7 +65,7 @@ const App = () => {
       
             <div className='bottom'>
           <p>
-            <a href='https://emojifinder.com/'>Emoji Finder</a>- Search emoji to copy & past into Facebook, twitter, Messenger or Slack
+            <a href='https://emoji-selector-rho.vercel.app/'>Emoji Finder</a>- Search emoji to copy & past into Facebook, twitter, Messenger or Slack
 
           
           </p>
