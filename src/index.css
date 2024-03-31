@@ -92,7 +92,7 @@ input:focus{
 .text-space{
   color: #002126;
     font-size: 2rem;
-    width: auto;
+    /* width: auto; */
     padding: 5rem 1rem;
     text-align: center;
     width: 50%;
@@ -121,12 +121,14 @@ input:focus{
   }
 
   .emojis-space{
+    top: 200px;
+    position: relative;
     display: flex;
    justify-content: center;
    align-items: center;
-   height: 200px;
+   height: 150px;
    font-size: 5rem;
-   margin-top: 50px;
+   margin-bottom: 70px;
    animation: bringUp 1s ease forwards;
    }
 
@@ -314,7 +316,7 @@ input:focus{
     display: flex;
    justify-content: center;
    align-items: center;
-   height: 50px;
+   height: 0px;
    font-size: 5rem;
    margin-top: 50px;
    animation: bringUp 1s ease forwards;
