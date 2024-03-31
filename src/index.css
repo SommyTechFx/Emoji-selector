@@ -179,12 +179,49 @@ input:focus{
   height: 20px;
   display: inline-block;
   border-radius: 50%;
+  margin-left: 2px;
   
  }
 
  #color-0{
   background-color: #FFCF43 ;
  }
+
+ #color-1{
+  background-color: #F9DCBE;
+ }
+ #color-2{
+  background-color: #DFBB97;
+ }
+ #color-3{
+  background-color: #BE8F6B;
+ }
+ #color-4{
+  background-color: #9A6440;
+ }
+ #color-5{
+  background-color: #59453A;
+ }
+ #color-6{
+  background-color: #00d9ff;
+  
+ }
+ .gender-chose{
+  background-image: url('./image/men-line.svg');
+  background-color: #002126;
+  font-size: 30px;
+  
+  
+ }
+
+ a{
+  color: #00b8e5;
+ }
+ 
+
+
+
+
 
  @media (max-width: 768px){
   .text-space{
@@ -255,7 +292,21 @@ input:focus{
       input:focus{
         border-color: #00d9ff;
       }
+
+      .little-Name{
+        position: relative;
+        height: 10px;
+        margin-top: 100px;
+   }
+
+   .colors-gender{
+    
+        /* height: 10px; */
+       margin-top: 80px; 
+        position: absolute;
+   }
+      }
       
-  }
+  
 
  

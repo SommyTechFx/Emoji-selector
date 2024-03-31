@@ -17,7 +17,7 @@ const App = () => {
     }
 
     if ( searchTerm === 'love'){
-      setEmojis(["🥰", "💕", "😍","👩‍❤️", "❤️", "", "💕", "💌","🏩", "🤟"  ])
+      setEmojis(["🥰", "💕", "😍","👩‍❤️", "❤️", "", "💕", "💌",  ])
     }
 
     if ( searchTerm === 'yeah'){
@@ -37,7 +37,7 @@ const App = () => {
     <div className='centering' >
 
       <div className='Search'>
-          <input className='willy' id='searchs' type='text' placeholder='Search emoji'  value={searchTerm}
+          <input id='searchs' type='text' placeholder='Search emoji'  value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}/>
           <button onClick={() => submit()} id='search'></button>
       </div>
@@ -60,20 +60,20 @@ const App = () => {
       <div style={{"display": "flex", "justifyContent": "space-between"}}>
           
 
-          <div>
-     
-          <div className='bottom'>
-        <p>
-          <a href='https://emojifinder.com/'>Emoji Finder</a>- Search emoji to copy & past into Facebook, twitter, Messenger or Slack
+            <div className='little-Name'>
+      
+            <div className='bottom'>
+          <p>
+            <a href='https://emojifinder.com/'>Emoji Finder</a>- Search emoji to copy & past into Facebook, twitter, Messenger or Slack
 
-         
-        </p>
-      </div>
+          
+          </p>
+        </div>
 
-      <div className='bottom-down'>
-         <span> Made by <a href='https://grahamhicks.com/'>Graham Hicks</a></span>
-      </div>
-          </div>
+        <div className='bottom-down'>
+          <span> Made by <a href='https://grahamhicks.com/'>Graham Hicks</a></span>
+        </div>
+            </div>
     
 
 
@@ -81,8 +81,17 @@ const App = () => {
         <div>
         <a id="color-0" className="colors" title="Reset skintones to yellow" href="#"></a>
         <a id="color-1" className="colors" title="Reset skintones to yellow" href="#"></a>
+        <a id="color-2" className="colors" title="Reset skintones to yellow" href="#"></a>
+        <a id="color-3" className="colors" title="Reset skintones to yellow" href="#"></a>
+        <a id="color-4" className="colors" title="Reset skintones to yellow" href="#"></a>
+        <a id="color-5" className="colors" title="Reset skintones to yellow" href="#"></a>
+        <a id="color-6" className="colors" title="Reset skintones to yellow" href="#"></a>
+    
+  
+        <a id="color-7" title="Reset skintones to yellow" href="#"> <div className='gender-chose'></div></a>
+
         </div>
-        <div>gender</div>
+        
       </div>
 
       </div>
